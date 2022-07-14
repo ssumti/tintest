@@ -1,0 +1,14 @@
+<nav class="navbar" id="main-navbar">
+    <div class="container">
+        <abp-logo *abpReplaceableTemplate="{ componentKey: logoComponentKey }"></abp-logo>
+        <abp-routes *abpReplaceableTemplate="{ componentKey: routesComponentKey}"></abp-routes>
+        <abp-nav-items
+              *abpReplaceableTemplate="{
+                componentKey: navItemsComponentKey }"
+            ></abp-nav-items>
+    </div>
+    </nav>
+    <div class="container">
+        <abp-page-alert-container></abp-page-alert-container>
+        <router-outlet #outlet="outlet"></router-outlet>
+    </div>

@@ -13,6 +13,10 @@ import { environment } from '../environments/environment';
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { APP_ROUTE_PROVIDER } from './route.provider';
+import { LogoComponent } from './logo/logo.component';
+import { RouteComponent } from './route/route.component';
+import { NavItemsComponent } from './nav-items/nav-items.component';
+import { RealEstateLayoutComponent } from './real-estate-layout/real-estate-layout.component';
 
 @NgModule({
   imports: [
@@ -30,7 +34,7 @@ import { APP_ROUTE_PROVIDER } from './route.provider';
     SettingManagementConfigModule.forRoot(),
     ThemeBasicModule.forRoot(),
   ],
-  declarations: [AppComponent],
+  declarations: [AppComponent, LogoComponent, RouteComponent, NavItemsComponent, RealEstateLayoutComponent],
   providers: [APP_ROUTE_PROVIDER],
   bootstrap: [AppComponent],
 })

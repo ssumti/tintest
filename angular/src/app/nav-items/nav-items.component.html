@@ -1,0 +1,15 @@
+<div *ngIf="!(currentUser$ | async)?.isAuthenticated; else helloUser" style="display: flex; width: 250px;">
+    <div class="container aa"><p role="button">Sign in</p></div> <div class="container aa"><p class="red" role="button" (click)="logIn()">{{'AbpAccount::Login' | abpLocalization}}</p></div>
+</div>
+<ng-template #helloUser>
+    <div class="row">
+        <div class="col">
+            <div ngbDropdown class="d-inline-block">
+            <button type="button" class="btn prime-color" id="dropdownBasic1" ngbDropdownToggle>Hello {{(currentUser$ | async)?.userName}}</button>
+            <div ngbDropdownMenu aria-labelledby="dropdownBasic1">
+                <button ngbDropdownItem (click)="logOut()">Log out</button>
+            </div>
+        </div>
+        </div>
+    </div>     
+</ng-template>

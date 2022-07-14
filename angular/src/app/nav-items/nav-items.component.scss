@@ -1,0 +1,30 @@
+p{
+    color: #333;
+    text-align: center;
+    padding: 5px;
+    border-radius: 5px;
+    margin: 0 10px;
+    font-weight: 550;
+}
+div.aa{
+    display: block;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: #ffffff;
+    text-align: center;
+}
+.red{
+    background-color: red;
+    color: #ffffff;
+}
+.red:hover{
+    background-color: rgb(154, 6, 6)
+}
+p:hover{
+    background-color: lightgray;
+}
+button.prime-color{
+    color: red;
+    border-color: red;
+}
