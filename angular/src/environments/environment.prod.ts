@@ -10,7 +10,7 @@ export const environment = {
     logoUrl: '',
   },
   oAuthConfig: {
-    issuer: 'https://localhost:44390',
+    issuer: 'http://abp.tdg-am.com.vn',
     redirectUri: baseUrl,
     clientId: 'real_estate_App',
     responseType: 'code',
@@ -19,7 +19,7 @@ export const environment = {
   },
   apis: {
     default: {
-      url: 'https://localhost:44390',
+      url: 'http://abp.tdg-am.com.vn',
       rootNamespace: 'Ssmti.real_estate',
     },
   },
