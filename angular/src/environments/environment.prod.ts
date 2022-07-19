@@ -1,6 +1,6 @@
 import { Environment } from '@abp/ng.core';
 
-const baseUrl = 'http://localhost:4200';
+const baseUrl = 'http://tintest.tdg-am.com.vn';
 
 export const environment = {
   production: true,
@@ -15,7 +15,7 @@ export const environment = {
     clientId: 'real_estate_App',
     responseType: 'code',
     scope: 'offline_access real_estate',
-    requireHttps: true
+    requireHttps: false
   },
   apis: {
     default: {
